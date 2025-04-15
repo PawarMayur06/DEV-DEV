@@ -26,7 +26,7 @@ jobs:
 
  
     - name: Validate and Generate ARM template
-      run: npm run build export ${{github.workspace}}/ /subscriptions/0d3ce63c-abaa-48ae-bbe1-f582cea576b9/resourceGroups/mayur-rg/providers/Microsoft.DataFactory/factories/mayurr-prod-adf"ExportedArmTemplate" 
+      run: npm run build export ${{github.workspace}}/ /subscriptions/0d3ce63c-abaa-48ae-bbe1-f582cea576b9/resourceGroups/mayur-rg/providers/Microsoft.DataFactory/factories/mayurr-prod-adf "ExportedArmTemplate" 
       working-directory: ${{github.workspace}}/
 
     - name: upload artifact
